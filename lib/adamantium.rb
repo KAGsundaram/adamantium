@@ -50,6 +50,7 @@ module Adamantium
       include Memoizable
       extend ModuleMethods
       extend ClassMethods if kind_of?(Class)
+      memoize(:hash, :inspect, :to_s)
     end
   end
   private_class_method :included
