@@ -63,6 +63,7 @@ TooManyMethods:
 TooManyStatements:
   enabled: true
   exclude:
+  - Adamantium#self.included
   - Adamantium::ModuleMethods#define_memoize_method
   - Adamantium::ModuleMethods#memoize_method
   - each
